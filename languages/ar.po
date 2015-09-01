@@ -1,0 +1,251 @@
+# Translation of Expound in Arabic
+# This file is distributed under the same license as the Expound package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-02-07 12:56:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"Project-Id-Version: Expound\n"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/expound/style.css
+msgid "An awesome magazine theme for your news site. Responsive layout, post thumbnails support, featured posts and more."
+msgstr "قالب مجلة مميزة لموقعك الإخبارية. قالب متجاوب, دعم للصور البارزة للمقالات, مقالات مميزة وأكثر."
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/expound/page-templates/template-full-width.php
+msgid "Full-width Template"
+msgstr "قالب بالعرض الكامل"
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Search"
+msgstr "بحث"
+
+#: searchform.php:9
+msgctxt "assistive text"
+msgid "Search"
+msgstr "بحث"
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "بحث &hellip;"
+
+#: related-content.php:9
+msgid "Related posts"
+msgstr "تدوينات ذات صلة"
+
+#: no-results.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "يظهر اننا لم نجد ما تبحث عنه. قد يفيدك البحث."
+
+#: no-results.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "للأسف, لم نجد ما يشابه كلمات البحث التي كتبتها. حاول مرة اخرى بكلمات اخرى."
+
+#: no-results.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "مستعد لنشر تدوينتك الأولى؟ <a href=\"%1$s\">ابدأ من هنا</a>."
+
+#: no-results.php:13
+msgid "Nothing Found"
+msgstr "لم يتم العثور على نتائج"
+
+#: index.php:49
+msgid "Archives"
+msgstr "الأرشيفات"
+
+#: index.php:47
+msgid "Search Results for: %s"
+msgstr "نتائج البحث عن: %s"
+
+#: index.php:45
+msgid "Yearly Archives: %s"
+msgstr "الأرشيف السنوي: %s"
+
+#: index.php:43
+msgid "Monthly Archives: %s"
+msgstr "الأرشيف الشهري: %s"
+
+#: index.php:41
+msgid "Daily Archives: %s"
+msgstr "الأرشيف اليومي : %s"
+
+#: index.php:33
+msgid "Author Archives: %s"
+msgstr "أرشيف الكاتب: %s"
+
+#: index.php:26
+msgid "Tag Archives: %s"
+msgstr "أرشيف الأوسمة: %s"
+
+#: index.php:23
+msgid "%s"
+msgstr "%s "
+
+#. translators: 1: who, 2: when
+#: inc/template-tags.php:120 inc/template-tags.php:142
+msgctxt "time"
+msgid "%1$s ago"
+msgstr "منذ %1$s"
+
+#. translators: 1: when, 2: where (category)
+#: inc/template-tags.php:152 inc/template-tags.php:158
+msgid "%1$s in %2$s."
+msgstr "%1$s في %2$s."
+
+#: inc/template-tags.php:164
+msgid "Tags: "
+msgstr "الأوسمة:"
+
+#: inc/template-tags.php:90
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s في %2$s"
+
+#: inc/template-tags.php:84
+msgid "Your comment is awaiting moderation."
+msgstr "تعليقك في انتظار المراجعة."
+
+#: inc/template-tags.php:81
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "<span class=\"says\">يقول</span> %s:"
+
+#: inc/template-tags.php:71
+msgid "Pingback:"
+msgstr "تعقيب:"
+
+#: inc/template-tags.php:48
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "مشاركات حديثة <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:44
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> التدوينات الأقدم"
+
+#: inc/template-tags.php:39
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&larr;"
+
+#: inc/template-tags.php:38
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&rarr;"
+
+#: inc/template-tags.php:34
+msgid "Post navigation"
+msgstr "التنقل بين التدوينات"
+
+#: inc/extras.php:70
+msgid "Page %s"
+msgstr "الصفحة %s"
+
+#: image.php:110
+msgid "Both comments and trackbacks are currently closed."
+msgstr "التعليقات والتعقيبات مغلقة حاليا"
+
+#: image.php:108
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "التعقيبات مغلقة، لكن تستطيع <a class=\"comment-link\" href=\"#respond\" title=\"نشر تعليق\">post a comment</a>."
+
+#: image.php:106
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "التعليقات معطلة، لكن يمكنك ترك وصلة تتبع : <a class=\"trackback-link\" href=\"%s\" title=\"وصلة تتبع لرسالتك\" rel=\"trackback\">وصلة تتبع</a>."
+
+#: image.php:104
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"اكتب تعليق\">اكتب تعليق</a> او اترك trackback: <a class=\"trackback-link\" href=\"%s\" title=\"رابط Trackback الخاص بمقالتك\" rel=\"trackback\"> رابط Trackback</a>."
+
+#: image.php:39
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "التالي <span class=\"meta-nav\">&larr;</span>"
+
+#: image.php:23
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "نشرت <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> في <a href=\"%3$s\" title=\"رابط للصورة الكاملة\"> %4$s &times; %5$s</a> في <a href=\"%6$s\" title=\"الرجوع إلى %7$s\" rel=\"gallery\">%8$s</a>"
+
+#: image.php:38
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&rarr;</span> السابق"
+
+#: header.php:39
+msgid "Skip to content"
+msgstr "تخطى إلى المحتوى "
+
+#: header.php:38
+msgid "Menu"
+msgstr "القائمة"
+
+#: functions.php:99
+msgid "Sidebar"
+msgstr "القائمة الجانبية"
+
+#: functions.php:76
+msgid "Primary Menu"
+msgstr "القائمة الرئيسية"
+
+#: featured-content.php:24
+msgid "Continue reading &rarr;"
+msgstr "المزيد &larr;"
+
+#: footer.php:16
+msgid "Theme: %1$s by %2$s."
+msgstr "قالب: %1$s بواسطة %2$s."
+
+#: content-page.php:23 content-single.php:29 image.php:34 image.php:112
+#: inc/template-tags.php:71 inc/template-tags.php:92
+msgid "Edit"
+msgstr "تحرير"
+
+#: content-page.php:18 content-single.php:20 image.php:95
+msgid "Pages:"
+msgstr "الصفحات:"
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "التعليقات مغلقة."
+
+#: comments.php:38 comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr "تعليقات أقدم &larr;"
+
+#: comments.php:37 comments.php:57
+msgid "&larr; Older Comments"
+msgstr "&rarr; تعليقات أقدم"
+
+#: comments.php:36 comments.php:56
+msgid "Comment navigation"
+msgstr "استعراض التعليق"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "لا أفكار على &rdquo;%2$s&ldquo;"
+msgstr[1] "فكرة واحدة على &rdquo;%2$s&ldquo;"
+msgstr[2] "فكرتان اثنتان على &rdquo;%2$s&ldquo;"
+msgstr[3] "%1$s أفكار على &rdquo;%2$s&ldquo;"
+msgstr[4] "%1$s فكرة على &rdquo;%2$s&ldquo;"
+msgstr[5] "%1$s فكرة على &rdquo;%2$s&ldquo;"
+
+#. translators: %1$s: smiley
+#: 404.php:44
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "حاول ان تبحث في الأرشيفات الشهرية. %1$s"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "يظهر انه لا يوجد شئ في هذا المكان. ربما يجب ان تجرب إستخدام واحد من الروابط بالأسفل او تجرب البحث؟"
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "أكثر التصنيفات إستخداماً"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "الصفحة التي طلبتها غير موجودة."

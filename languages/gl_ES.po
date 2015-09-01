@@ -1,0 +1,247 @@
+# Translation of Expound in Galician
+# This file is distributed under the same license as the Expound package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-06-01 15:14:02+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"Project-Id-Version: Expound\n"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/expound/style.css
+msgid "An awesome magazine theme for your news site. Responsive layout, post thumbnails support, featured posts and more."
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/expound/page-templates/template-full-width.php
+msgid "Full-width Template"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Search"
+msgstr "Buscar"
+
+#: searchform.php:9
+msgctxt "assistive text"
+msgid "Search"
+msgstr "Buscar"
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Buscar &hellip;"
+
+#: related-content.php:9
+msgid "Related posts"
+msgstr "Artigos relacionados"
+
+#: no-results.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que non atopamos o que estás a buscar. Quizais unha procura axude. "
+
+#: no-results.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Sentímolo, non hai nada que coincida cos termos de busca. Podes tentar de novo con palabras diferentes."
+
+#: no-results.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Preparado/a para publicar o teu primeiro artigo? <a href=\"%1$s\">Comeza aquí</a>."
+
+#: no-results.php:13
+msgid "Nothing Found"
+msgstr "Non se atopou nada"
+
+#: index.php:49
+msgid "Archives"
+msgstr "Arquivo"
+
+#: index.php:47
+msgid "Search Results for: %s"
+msgstr "Resultados da procura de: %s"
+
+#: index.php:45
+msgid "Yearly Archives: %s"
+msgstr "Arquivo por anos: %s"
+
+#: index.php:43
+msgid "Monthly Archives: %s"
+msgstr "Arquivo por meses: %s"
+
+#: index.php:41
+msgid "Daily Archives: %s"
+msgstr "Arquivo por días: %s"
+
+#: index.php:33
+msgid "Author Archives: %s"
+msgstr "Arquivo por autores: %s"
+
+#: index.php:26
+msgid "Tag Archives: %s"
+msgstr "Arquivo por etiquetas: %s"
+
+#: index.php:23
+msgid "%s"
+msgstr "%s"
+
+#. translators: 1: who, 2: when
+#: inc/template-tags.php:120 inc/template-tags.php:142
+msgctxt "time"
+msgid "%1$s ago"
+msgstr ""
+
+#. translators: 1: when, 2: where (category)
+#: inc/template-tags.php:152 inc/template-tags.php:158
+msgid "%1$s in %2$s."
+msgstr ""
+
+#: inc/template-tags.php:164
+msgid "Tags: "
+msgstr "Etiquetas:"
+
+#: inc/template-tags.php:90
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s ás %2$s"
+
+#: inc/template-tags.php:84
+msgid "Your comment is awaiting moderation."
+msgstr "O teu comentario está á espera de moderación."
+
+#: inc/template-tags.php:81
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">di:</span>"
+
+#: inc/template-tags.php:71
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:48
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Artigos máis recentes <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:44
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Artigos anteriores"
+
+#: inc/template-tags.php:39
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: inc/template-tags.php:38
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: inc/template-tags.php:34
+msgid "Post navigation"
+msgstr "Navegación de artigos"
+
+#: inc/extras.php:70
+msgid "Page %s"
+msgstr "Páxina %s"
+
+#: image.php:110
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Están pechados tanto os comentarios como os trackbacks."
+
+#: image.php:108
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Os trackbacks está pechados, pero podes <a class=\"comment-link\" href=\"#respond\" title=\"Enviar un comentario\">enviar un comentario</a>. "
+
+#: image.php:106
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Os comentarios están pechados, pero podes deixar un trackback: <a class=\"trackback-link\" href=\"%s\" title=\"URL do trackback para o teu artigo\" rel=\"trackback\">URL do trackback</a>. "
+
+#: image.php:104
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Envía un comentario\">Envía un comentario</a> ou deixa un trackback: <a class=\"trackback-link\" href=\"%s\" title=\"URL do trackback para o teu artigo\" rel=\"trackback\">URL do trackback</a>."
+
+#: image.php:39
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Seguinte <span class=\"meta-nav\">&rarr;</span>"
+
+#: image.php:23
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: image.php:38
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Anterior"
+
+#: header.php:39
+msgid "Skip to content"
+msgstr "Saltar ao contido"
+
+#: header.php:38
+msgid "Menu"
+msgstr "Menú"
+
+#: functions.php:99
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: functions.php:76
+msgid "Primary Menu"
+msgstr "Menú primario"
+
+#: featured-content.php:24
+msgid "Continue reading &rarr;"
+msgstr "Seguir lendo &rarr;"
+
+#: footer.php:16
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s por %2$s."
+
+#: content-page.php:23 content-single.php:29 image.php:34 image.php:112
+#: inc/template-tags.php:71 inc/template-tags.php:92
+msgid "Edit"
+msgstr "Editar"
+
+#: content-page.php:18 content-single.php:20 image.php:95
+msgid "Pages:"
+msgstr "Páxinas:"
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "Os comentarios están pechados."
+
+#: comments.php:38 comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr "Comentarios máis recentes &rarr;"
+
+#: comments.php:37 comments.php:57
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentarios máis antigos"
+
+#: comments.php:36 comments.php:56
+msgid "Comment navigation"
+msgstr "Navegación de comentarios"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un comentario en &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentarios en &ldquo;%2$s&rdquo;"
+
+#. translators: %1$s: smiley
+#: 404.php:44
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Proba a buscar nos arquivos mensuais. %1$s"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "Categorías máis utilizadas"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Vaia! Non atopamos esa páxina."
