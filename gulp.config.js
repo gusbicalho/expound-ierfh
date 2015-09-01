@@ -33,6 +33,8 @@ module.exports = function() {
       source: [
         '**/*',
         '!*.js*',
+        '!typings',
+        '!typings/**/*',
         '!node_modules',
         '!node_modules/**/*'
       ],
