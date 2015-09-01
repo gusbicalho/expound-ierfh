@@ -19,8 +19,7 @@ module.exports = function() {
   var config = {
     sass: {
       source: [
-        'css/*.scss',
-        '!css/_*.scss'
+        'css/*.scss'
       ],
       base: '.',
       bundle: './style.css',
