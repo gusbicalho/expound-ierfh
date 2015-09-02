@@ -1,47 +1,36 @@
-$white       : #fff;
-$ghost       : #fafafa;
-$snow        : #f9f9f9;
-$vapor       : #f6f6f6;
-$white-smoke : #f5f5f5;
-$silver      : #efefef;
-$smoke       : #eee;
-$gainsboro   : #ddd;
-$iron        : #ccc;
-$base        : #aaa;
-$aluminum    : #999;
-$jumbo       : #888;
-$monsoon     : #777;
-$steel       : #666;
-$charcoal    : #555;
-$tuatara     : #444;
-$oil         : #333;
-$jet         : #222;
-$night       : #111;
-$black       : #000;
+$white: #fff;
+$light: #aaa;
+$dark: #3a3a3a;
 
 $primary: #117bb8;
+$bg-text-highlight: #fff9c0;
 
-$body-bg: $oil;
+$bg-body: darken($dark, 2.7%);
 
-$text: #3a3a3a;
-$text-medium: #404040;
-$text-light: #606060;
-$text-lighter: #878787;
-$text-lightest: $base;
-$text-highlight: #fff9c0;
-$text-meta: $base;
-$text-caption: $aluminum;
-$text-thumbnail: $monsoon;
+$text: $dark;
+$text-medium: lighten($text, 2.5%);
+$text-light: lighten($text, 15%);
+$text-lighter: lighten($text, 30%);
+$text-meta: $light;
+$text-inverse-soft: $light;
+$text-inverse-hard: $white;
+$text-caption: lighten($text, 37.4%);
+$text-thumbnail: lighten($text, 24%);
 
-$bg-caption: $silver;
-$bg-block: #f7f7f7;
-$bg-pre-block: $white-smoke;
-$bg-navigation: #3a3a3a;
-$bg-navigation-hover: #474747;
-$bg-thumbnail: #3a3a3a;
+$bg-content: $white;
+$bg-navigation: $dark;
+$bg-navigation-hover: lighten($bg-navigation, 5%);
 
-$divider-lighter: $gainsboro;
-$divider-light: $iron;
+$bg-thumbnail: $dark;
+$bg-caption: lighten($light, 26.9%);
 
-$divider-thumbnail: #212121;
-$divider-twitter: #f7f7f7;
+$bg-pre-block: lighten($light, 29.5%);
+$bg-block: lighten($light, 30.3%);
+
+$divider-lighter: lighten($light, 20%);
+$divider-light: lighten($light, 13.5%);
+
+$divider-thumbnail: darken($dark, 10%);
+$divider-twitter: lighten($light, 30.3%);
+
+$bg-inf-handle: darken($dark, 2.7%);

@@ -1,5 +1,10 @@
 @import 'variables.scss';
 
+$smoke       : #eee;
+$iron        : #ccc;
+$steel       : #666;
+$night       : #111;
+
 /* =Global
 ----------------------------------------------- */
 
@@ -99,7 +104,7 @@ abbr, acronym {
 }
 
 mark, ins {
-  background: $text-highlight;
+  background: $bg-text-highlight;
   text-decoration: none;
 }
 
