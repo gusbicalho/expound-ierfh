@@ -624,7 +624,7 @@ a.wpm-button:hover {
 }
 
 body {
-  background: #333333;
+  background: #343434;
   font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
@@ -640,7 +640,7 @@ var {
 pre {
   margin-bottom: 20px;
   padding: 15px 20px;
-  background: whitesmoke;
+  background: #f6f6f6;
   overflow: auto;
   max-width: 100%;
 }
@@ -1248,11 +1248,11 @@ pre {
 
 .site-content .entry-content tr:hover td,
 .site-content .comment-content tr:hover td {
-  background: #f7f7f7;
+  background: #f6f6f6;
 }
 
 #tinymce tr:hover td {
-  background: #f7f7f7;
+  background: #f6f6f6;
 }
 
 .site-content .entry-content ul,
@@ -1282,7 +1282,7 @@ pre {
   padding-bottom: 1px;
   padding-right: 20px;
   padding-left: 80px;
-  background: #f7f7f7;
+  background: #f6f6f6;
   position: relative;
   display: inline-block;
 }
@@ -1295,7 +1295,7 @@ pre {
   padding-bottom: 1px;
   padding-right: 20px;
   padding-left: 80px;
-  background: #f7f7f7;
+  background: #f6f6f6;
   position: relative;
   display: inline-block;
 }
@@ -1550,7 +1550,7 @@ article:hover .entry-title a {
   padding: 2px 8px;
   font-size: 8px;
   text-transform: uppercase;
-  color: #777777;
+  color: #7a7a7a;
 }
 
 .entry-thumbnail-category:hover {
@@ -1603,7 +1603,7 @@ article:hover .entry-title a {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 10px;
-  background: #f7f7f7;
+  background: #f6f6f6;
 }
 
 /* =Asides
@@ -1636,11 +1636,11 @@ article:hover .entry-title a {
   max-width: 98%;
   width: 100%;
   display: block;
-  background: #efefef;
-  border: solid 1px #efefef;
+  background: #eaeaea;
+  border: solid 1px #eaeaea;
   margin: 0;
   padding: 5px;
-  color: #999999;
+  color: #9a9a9a;
 }
 
 .wp-caption img {
@@ -1897,7 +1897,7 @@ object {
 
 .widget-area .widget_twitter .tweets li {
   padding: 20px 0;
-  border-bottom: solid 1px #f7f7f7;
+  border-bottom: solid 1px #f6f6f6;
 }
 
 .widget-area .widget_twitter .tweets li:last-child {
@@ -1951,7 +1951,7 @@ h3.sd-title {
 }
 
 .widget.widget_calendar tr:hover td {
-  background: #f7f7f7;
+  background: #f6f6f6;
 }
 
 .widget.widget_calendar #today {
@@ -2013,7 +2013,7 @@ h3.sd-title {
 }
 
 #infinite-handle span:hover {
-  background-color: #333333;
+  background-color: #343434;
 }
 
 /* =Footer

@@ -5,7 +5,7 @@ $dark: #3a3a3a;
 $primary: #117bb8;
 $bg-text-highlight: #fff9c0;
 
-$bg-body: darken($dark, 2.7%);
+$bg-body: darken($dark, 2.5%);
 
 $text: $dark;
 $text-medium: lighten($text, 2.5%);
@@ -14,23 +14,23 @@ $text-lighter: lighten($text, 30%);
 $text-meta: $light;
 $text-inverse-soft: $light;
 $text-inverse-hard: $white;
-$text-caption: lighten($text, 37.4%);
-$text-thumbnail: lighten($text, 24%);
+$text-caption: lighten($text, 37.5%);
+$text-thumbnail: lighten($text, 25%);
 
 $bg-content: $white;
 $bg-navigation: $dark;
 $bg-navigation-hover: lighten($bg-navigation, 5%);
 
 $bg-thumbnail: $dark;
-$bg-caption: lighten($light, 26.9%);
+$bg-caption: lighten($light, 25%);
 
-$bg-pre-block: lighten($light, 29.5%);
-$bg-block: lighten($light, 30.3%);
+$bg-pre-block: lighten($light, 30%);
+$bg-block: lighten($light, 30%);
 
 $divider-lighter: lighten($light, 20%);
 $divider-light: lighten($light, 13.5%);
 
 $divider-thumbnail: darken($dark, 10%);
-$divider-twitter: lighten($light, 30.3%);
+$divider-twitter: lighten($light, 30%);
 
-$bg-inf-handle: darken($dark, 2.7%);
+$bg-inf-handle: darken($dark, 2.5%);
