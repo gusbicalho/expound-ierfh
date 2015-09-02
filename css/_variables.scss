@@ -3,8 +3,8 @@ $light: #aaa;
 $dark: #3a3a3a;
 
 $primary: #117bb8;
-$bg-text-highlight: #fff9c0;
 
+// Uses of Light
 $bg-body: darken($dark, 2.5%);
 
 $text: $dark;
@@ -30,7 +30,17 @@ $bg-block: lighten($light, 30%);
 $divider-lighter: lighten($light, 20%);
 $divider-light: lighten($light, 13.5%);
 
-$divider-thumbnail: darken($dark, 10%);
-$divider-twitter: lighten($light, 30%);
+$thumbnail-divider: darken($dark, 10%);
+$twitter-divider: lighten($light, 30%);
 
-$bg-inf-handle: darken($dark, 2.5%);
+$inf-handle-bg-hover: darken($dark, 2.5%);
+
+// Uses of Primary
+$title-hover: $primary;
+$link-hover: $primary;
+$current-page-item-bg: $primary;
+$current-page-item-bg-hover: lighten($primary, 5%);
+$thumbnail-bg-hover: $primary;
+$thumbnail-divider-hover: darken($primary, 10%);
+
+$inf-handle-bg: $primary;

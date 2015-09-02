@@ -76,10 +76,10 @@ pre {
   a {
     text-decoration: none;
     color: $text;
-    &:hover {
-      color: $primary;
-    }
     display: block;
+  }
+  &:hover a {
+    color: $title-hover;
   }
 }
 
@@ -197,7 +197,7 @@ pre {
     }
     > {
       .current_page_item, .current-menu-item {
-        background: $primary;
+        background: $current-page-item-bg;
       }
     }
   }
@@ -231,13 +231,13 @@ pre {
   ul {
     > {
       .current_page_item, .current-menu-item, .current-post-ancestor, .current-menu-ancestor, .current-menu-parent, .current-post-parent {
-        background: $primary;
+        background: $current-page-item-bg;
       }
       .current_page_item:hover, .current-menu-item:hover, .current-post-ancestor:hover, .current-menu-ancestor:hover, .current-menu-parent:hover, .current-post-parent:hover {
-        background: lighten($primary, 5%);
+        background: $current-page-item-bg-hover;
       }
       .current_page_item:hover a:after, .current-menu-item:hover a:after, .current-post-ancestor:hover a:after, .current-menu-ancestor:hover a:after, .current-menu-parent:hover a:after, .current-post-parent:hover a:after {
-        border-top-color: lighten($primary, 5%);
+        border-top-color: $current-page-item-bg-hover;
       }
       .current_page_item ~ .current_page_item a, .current-menu-item ~ .current-menu-item a, .current-post-ancestor ~ .current-post-ancestor a, .current-menu-parent ~ .current-menu-parent a, .current-post-parent ~ .current-post-parent a {
         background: $bg-navigation;
@@ -250,7 +250,7 @@ pre {
         font-size: 0px;
         line-height: 0%;
         width: 0px;
-        border-top: 6px solid $primary;
+        border-top: 6px solid $current-page-item-bg;
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         position: absolute;
@@ -680,7 +680,7 @@ pre {
     a {
       color: $text;
       &:hover {
-        color: $primary;
+        color: $title-hover;
       }
     }
   }
@@ -693,7 +693,7 @@ pre {
       color: $text-meta;
       text-decoration: none;
       &:hover {
-        color: $primary;
+        color: $link-hover;
       }
     }
   }
@@ -749,7 +749,7 @@ pre {
     a {
       color: $text;
       &:hover {
-        color: $primary;
+        color: $title-hover;
       }
     }
   }
@@ -802,7 +802,7 @@ pre {
     a {
       color: $text;
       &:hover {
-        color: $primary;
+        color: $title-hover;
       }
     }
   }
@@ -813,7 +813,7 @@ article:hover {
     opacity: 0.9;
   }
   .entry-title a {
-    color: $primary;
+    color: $title-hover;
   }
 }
 
@@ -836,9 +836,9 @@ article:hover {
   text-transform: uppercase;
   color: $text-thumbnail;
   &:hover {
-    background: $primary;
+    background: $thumbnail-bg-hover;
     &:before {
-      border-top: 6px solid darken($primary, 10%);
+      border-top: 6px solid $thumbnail-divider-hover;
     }
   }
   a {
@@ -850,7 +850,7 @@ article:hover {
     font-size: 0px;
     line-height: 0%;
     width: 0px;
-    border-top: 6px solid $divider-thumbnail;
+    border-top: 6px solid $thumbnail-divider;
     border-left: 6px solid transparent;
     position: absolute;
     left: 0px;
@@ -1030,7 +1030,7 @@ embed, iframe, object {
         text-decoration: none;
         color: $text;
         &:hover {
-          color: $primary;
+          color: $link-hover;
         }
       }
       .avatar {
@@ -1051,7 +1051,7 @@ embed, iframe, object {
         font-size: 12px;
       }
       &:hover, a:hover {
-        color: $primary;
+        color: $link-hover;
       }
     }
   }
@@ -1105,7 +1105,7 @@ embed, iframe, object {
     a {
       color: $text;
       &:hover {
-        color: $primary;
+        color: $title-hover;
       }
     }
   }
@@ -1117,7 +1117,7 @@ embed, iframe, object {
       color: $text;
       text-decoration: none;
       &:hover {
-        color: $primary;
+        color: $link-hover;
       }
     }
     .timesince {
@@ -1125,7 +1125,7 @@ embed, iframe, object {
     }
     .tweets li {
       padding: 20px 0;
-      border-bottom: solid 1px $divider-twitter;
+      border-bottom: solid 1px $twitter-divider;
       &:last-child {
         border-bottom: none;
       }
@@ -1226,13 +1226,13 @@ h3.sd-title {
   margin-top: 20px;
   text-align: center;
   span {
-    background-color: $primary;
+    background-color: $inf-handle-bg;
     border: 0;
     color: $text-inverse-hard;
     display: inline-block;
     vertical-align: top;
     &:hover {
-      background-color: $bg-inf-handle;
+      background-color: $inf-handle-bg-hover;
     }
   }
 }
@@ -1247,7 +1247,7 @@ h3.sd-title {
   a {
     color: $text-inverse-soft;
     &:hover {
-      color: $primary;
+      color: $link-hover;
     }
   }
 }

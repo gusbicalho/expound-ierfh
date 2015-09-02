@@ -700,7 +700,7 @@ pre {
   display: block;
 }
 
-.site-title a:hover {
+.site-title:hover a {
   color: #117bb8;
 }
 
