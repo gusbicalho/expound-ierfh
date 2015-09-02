@@ -649,7 +649,7 @@ pre {
 ----------------------------------------------- */
 
 #page {
-  background: white;
+  background: #fff;
   width: 1020px;
   margin: 40px auto;
 }
@@ -806,7 +806,7 @@ pre {
 
 .main-small-navigation a {
   display: block;
-  color: white;
+  color: #fff;
   padding: 10px 40px;
   text-decoration: none;
 }
@@ -852,7 +852,7 @@ pre {
 }
 
 .navigation-main a {
-  color: white;
+  color: #fff;
   padding: 10px;
   position: relative;
 }
@@ -996,7 +996,7 @@ pre {
 
 .site-header .menu-toggle {
   background: #3a3a3a;
-  color: white;
+  color: #fff;
   font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   padding: 10px 22px;
@@ -1044,7 +1044,7 @@ pre {
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  background: #ffffff url("css/images/absurdidad.png") 0 0 repeat;
+  background: #fff url("css/images/absurdidad.png") 0 0 repeat;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 20px;
   line-height: 28px;
@@ -1055,7 +1055,7 @@ pre {
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  background: #ffffff url("css/images/absurdidad.png") 0 0 repeat;
+  background: #fff url("css/images/absurdidad.png") 0 0 repeat;
 }
 
 .page-header h1 {
@@ -1227,23 +1227,23 @@ pre {
 .site-content .entry-content th,
 .site-content .comment-content th {
   padding: 8px 8px;
-  border-bottom: solid 1px #dddddd;
+  border-bottom: solid 1px #ddd;
 }
 
 #tinymce th {
   padding: 8px 8px;
-  border-bottom: solid 1px #dddddd;
+  border-bottom: solid 1px #ddd;
 }
 
 .site-content .entry-content td,
 .site-content .comment-content td {
   padding: 8px 8px;
-  border-bottom: solid 1px #dddddd;
+  border-bottom: solid 1px #ddd;
 }
 
 #tinymce td {
   padding: 8px 8px;
-  border-bottom: solid 1px #dddddd;
+  border-bottom: solid 1px #ddd;
 }
 
 .site-content .entry-content tr:hover td,
@@ -1497,7 +1497,7 @@ pre {
 
 .featured-content-secondary {
   margin-top: -1px;
-  background: #ffffff url("css/images/absurdidad.png") 0 0 repeat;
+  background: #fff url("css/images/absurdidad.png") 0 0 repeat;
 }
 
 .featured-content-secondary article {
@@ -1562,7 +1562,7 @@ article:hover .entry-title a {
 }
 
 .entry-thumbnail-category a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -2022,11 +2022,11 @@ h3.sd-title {
 .site-footer {
   clear: both;
   padding: 40px 40px;
-  color: #aaaaaa;
+  color: #aaa;
 }
 
 .site-footer a {
-  color: #aaaaaa;
+  color: #aaa;
 }
 
 .site-footer a:hover {
