@@ -674,7 +674,7 @@ pre {
 }
 
 .site-title-group {
-  margin: 50px 40px 50px 40px;
+  margin: 50px 40px 50px;
 }
 
 .site-branding .wrapper-link {
@@ -1070,10 +1070,7 @@ pre {
 }
 
 .featured-content-secondary {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 40px 30px 20px 30px;
   overflow: hidden;
 }
 
@@ -1098,7 +1095,7 @@ pre {
 
 .single .site-content .related-content .related-content-title {
   font-size: 16px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-left: 20px;
 }
 
@@ -1133,81 +1130,35 @@ pre {
 }
 
 .site-content .entry-content h1,
-.site-content .comment-content h1 {
-  font-size: 34px;
-  line-height: 44px;
-}
-
+.site-content .comment-content h1,
 #tinymce h1 {
   font-size: 34px;
   line-height: 44px;
-}
-
-.site-content .entry-content h2,
-.site-content .comment-content h2 {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-#tinymce h2 {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.site-content .entry-content h3,
-.site-content .comment-content h3 {
-  font-size: 16px;
-  line-height: 18px;
-  color: #606060;
-}
-
-#tinymce h3 {
-  font-size: 16px;
-  line-height: 18px;
-  color: #606060;
-}
-
-.site-content .entry-content h1,
-.site-content .comment-content h1 {
-  margin-bottom: 10px;
-  margin-top: 40px;
-}
-
-#tinymce h1 {
   margin-bottom: 10px;
   margin-top: 40px;
 }
 
 .site-content .entry-content h2,
-.site-content .comment-content h2 {
-  margin-bottom: 10px;
-  margin-top: 40px;
-}
-
+.site-content .comment-content h2,
 #tinymce h2 {
+  font-size: 20px;
+  line-height: 28px;
   margin-bottom: 10px;
   margin-top: 40px;
 }
 
 .site-content .entry-content h3,
-.site-content .comment-content h3 {
-  margin-bottom: 10px;
-  margin-top: 40px;
-}
-
+.site-content .comment-content h3,
 #tinymce h3 {
+  font-size: 16px;
+  line-height: 18px;
+  color: #606060;
   margin-bottom: 10px;
   margin-top: 40px;
 }
 
 .site-content .entry-content hr,
-.site-content .comment-content hr {
-  background-color: #dddddd;
-  border: 0;
-  height: 1px;
-  margin-bottom: 20px;
-}
-
+.site-content .comment-content hr,
 #tinymce hr {
   background-color: #dddddd;
   border: 0;
@@ -1216,77 +1167,45 @@ pre {
 }
 
 .site-content .entry-content table,
-.site-content .comment-content table {
-  margin-bottom: 20px;
-}
-
+.site-content .comment-content table,
 #tinymce table {
   margin-bottom: 20px;
 }
 
 .site-content .entry-content th,
-.site-content .comment-content th {
-  padding: 8px 8px;
-  border-bottom: solid 1px #dddddd;
-}
-
+.site-content .comment-content th,
 #tinymce th {
   padding: 8px 8px;
   border-bottom: solid 1px #dddddd;
 }
 
 .site-content .entry-content td,
-.site-content .comment-content td {
-  padding: 8px 8px;
-  border-bottom: solid 1px #dddddd;
-}
-
+.site-content .comment-content td,
 #tinymce td {
   padding: 8px 8px;
   border-bottom: solid 1px #dddddd;
 }
 
 .site-content .entry-content tr:hover td,
-.site-content .comment-content tr:hover td {
-  background: #f6f6f6;
-}
-
+.site-content .comment-content tr:hover td,
 #tinymce tr:hover td {
   background: #f6f6f6;
 }
 
 .site-content .entry-content ul,
-.site-content .comment-content ul {
-  margin-bottom: 20px;
-}
-
+.site-content .comment-content ul,
 #tinymce ul {
   margin-bottom: 20px;
 }
 
 .site-content .entry-content ol,
-.site-content .comment-content ol {
-  margin-bottom: 20px;
-}
-
+.site-content .comment-content ol,
 #tinymce ol {
   margin-bottom: 20px;
 }
 
 .site-content .entry-content blockquote,
-.site-content .comment-content blockquote {
-  margin-left: -40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 1px;
-  padding-right: 20px;
-  padding-left: 80px;
-  background: #f6f6f6;
-  position: relative;
-  display: inline-block;
-}
-
+.site-content .comment-content blockquote,
 #tinymce blockquote {
   margin-left: -40px;
   margin-top: 20px;
@@ -1301,16 +1220,7 @@ pre {
 }
 
 .site-content .entry-content blockquote:before,
-.site-content .comment-content blockquote:before {
-  content: '\0201C';
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 50px;
-  position: absolute;
-  left: 40px;
-  top: 32px;
-  color: #aaa;
-}
-
+.site-content .comment-content blockquote:before,
 #tinymce blockquote:before {
   content: '\0201C';
   font-family: Georgia, 'Times New Roman', serif;
@@ -1322,10 +1232,7 @@ pre {
 }
 
 .site-content .entry-content blockquote cite:before,
-.site-content .comment-content blockquote cite:before {
-  content: '\02014  ';
-}
-
+.site-content .comment-content blockquote cite:before,
 #tinymce blockquote cite:before {
   content: '\02014  ';
 }
@@ -1394,10 +1301,10 @@ pre {
 }
 
 .blog .site-content .has-post-thumbnail .entry-thumbnail,
-.archive .site-content .has-post-thumbnail .entry-thumbnail,
-.search .site-content .has-post-thumbnail .entry-thumbnail,
 .blog .site-content .has-post-thumbnail .entry-thumbnail img,
+.archive .site-content .has-post-thumbnail .entry-thumbnail,
 .archive .site-content .has-post-thumbnail .entry-thumbnail img,
+.search .site-content .has-post-thumbnail .entry-thumbnail,
 .search .site-content .has-post-thumbnail .entry-thumbnail img {
   float: left;
 }
@@ -1425,23 +1332,21 @@ pre {
 }
 
 .blog .site-content .has-post-thumbnail .entry-header,
-.archive .site-content .has-post-thumbnail .entry-header,
-.search .site-content .has-post-thumbnail .entry-header,
 .blog .site-content .has-post-thumbnail .entry-summary,
-.archive .site-content .has-post-thumbnail .entry-summary,
-.search .site-content .has-post-thumbnail .entry-summary,
 .blog .site-content .has-post-thumbnail .entry-meta,
+.archive .site-content .has-post-thumbnail .entry-header,
+.archive .site-content .has-post-thumbnail .entry-summary,
 .archive .site-content .has-post-thumbnail .entry-meta,
+.search .site-content .has-post-thumbnail .entry-header,
+.search .site-content .has-post-thumbnail .entry-summary,
 .search .site-content .has-post-thumbnail .entry-meta {
-  margin-left: 240px;
+  margin-left: 220px;
+  padding-left: 20px;
 }
 
 .featured-content article {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 40px 40px 40px;
   margin: 0;
-  padding-left: 40px;
-  padding-right: 40px;
   border-bottom: solid 1px #dddddd;
 }
 
@@ -2021,7 +1926,7 @@ h3.sd-title {
 
 .site-footer {
   clear: both;
-  padding: 40px 40px;
+  padding: 40px 40px 40px;
   color: #aaa;
 }
 
@@ -2050,10 +1955,7 @@ h3.sd-title {
   }
 
   .featured-content-secondary {
-    padding-top: 20px;
-    padding-bottom: 0;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px 40px 0 40px;
   }
 
   .featured-content-secondary article {
@@ -2071,7 +1973,8 @@ h3.sd-title {
 
   .featured-content-secondary .has-post-thumbnail .entry-header,
   .featured-content-secondary .has-post-thumbnail .entry-summary {
-    margin-left: 240px;
+    margin-left: 220px;
+    padding-left: 20px;
   }
 
   .featured-content-secondary .has-post-thumbnail .entry-title {
@@ -2149,8 +2052,8 @@ h3.sd-title {
 
   .featured-content .has-post-thumbnail .entry-header,
   .featured-content .has-post-thumbnail .entry-summary {
-    margin-left: 240px;
-    padding-left: 0;
+    margin-left: 220px;
+    padding-left: 20px;
   }
 
   .site-content article {
@@ -2177,11 +2080,7 @@ h3.sd-title {
   }
 
   .featured-content .has-post-thumbnail .entry-header,
-  .featured-content .has-post-thumbnail .entry-summary {
-    margin-left: 0;
-    clear: both;
-  }
-
+  .featured-content .has-post-thumbnail .entry-summary,
   .featured-content-secondary .has-post-thumbnail .entry-header,
   .featured-content-secondary .has-post-thumbnail .entry-summary {
     margin-left: 0;
@@ -2190,18 +2089,10 @@ h3.sd-title {
 
   .blog .site-content .has-post-thumbnail .entry-header,
   .blog .site-content .has-post-thumbnail .entry-summary,
-  .blog .site-content .has-post-thumbnail .entry-meta {
-    margin-left: 0;
-    clear: both;
-  }
-
+  .blog .site-content .has-post-thumbnail .entry-meta,
   .archive .site-content .has-post-thumbnail .entry-header,
   .archive .site-content .has-post-thumbnail .entry-summary,
-  .archive .site-content .has-post-thumbnail .entry-meta {
-    margin-left: 0;
-    clear: both;
-  }
-
+  .archive .site-content .has-post-thumbnail .entry-meta,
   .search .site-content .has-post-thumbnail .entry-header,
   .search .site-content .has-post-thumbnail .entry-summary,
   .search .site-content .has-post-thumbnail .entry-meta {

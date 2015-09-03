@@ -1,3 +1,5 @@
+// Colors /////////////////////////////////////////////////
+
 $white: #fff;
 $light: #aaa;
 $dark: #3a3a3a;
@@ -44,3 +46,53 @@ $thumbnail-bg-hover: $primary;
 $thumbnail-divider-hover: darken($primary, 10%);
 
 $inf-handle-bg: $primary;
+
+// Measures ///////////////////////////////////////////////
+
+$page-width: 1020px;
+$page-width-1080: 960px;
+$page-width-1020: 900px;
+$page-width-960: 840px;
+$page-width-900: 87%;
+$page-width-600: 85%;
+
+$page-margin: 40px auto;
+$page-padding: 40px; // used in several places, sometimes as margins of children
+
+$page-quarter: ($page-width - 2*$page-padding)/4 - 15px;
+
+$nav-submenu-link-width: 200px;
+$nav-submenu-social-link-width: 24px;
+$nav-current-item-arrow-size: 6px;
+
+$featured-article-thumbnail-width: 50%;
+$featured-article-thumbnail-width-900: 220px;
+
+$featured-secondary-article-width: $page-quarter;
+$featured-secondary-article-thumbnail-width-1080: 220px;
+
+$primary-width: 740px;
+$primary-width-1080: 680px;
+$primary-width-1020: 620px;
+$primary-width-960: 560px;
+$primary-width-900: 100%;
+$primary-width-full: 1020px;
+$primary-width-full-1080: 960px;
+$primary-width-full-1020: 900px;
+$primary-width-full-960: 840px;
+$primary-width-full-900: 100%;
+
+$list-content-article-header-margin-left: 220px; // space for thumbnail
+
+$single-article-related-article-width: $page-quarter;
+$single-article-related-article-width-1080: 200px;
+$single-article-related-article-width-1020: 180px;
+$single-article-related-article-width-960: 160px;
+
+$single-article-related-article-thumbnail-width-700: 50px;
+
+$content-gallery-image-max-width: 90%;
+
+$secondary-width: $page-quarter + 40px;
+
+$thumbnail-width-700: 100%;
