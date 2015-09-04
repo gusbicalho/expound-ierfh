@@ -4,25 +4,16 @@ var del = require('del');
 var $ = require('gulp-load-plugins')();
 var ftp = require('vinyl-ftp');
 
-gulp.task('styles', function() {
-  log('Compiling Less -> CSS');
-  return gulp
-    .src(config.sass.source, {base: config.sass.base})
-    .pipe($.print())
-    .pipe($.plumber())
-    .pipe($.sass().on('error', $.sass.logError))
-    .pipe($.autoprefixer({browsers: ['last 2 version', '> 5%']}))
-    .pipe($.concatCss(config.sass.bundle))
-    .pipe($.print())
-    .pipe(gulp.dest(config.sass.dest));
-});
+gulp.task('styles-dev', compileStyles.bind(undefined, false));
 
-gulp.task('watch-styles', ['styles'], function() {
+gulp.task('watch-styles', ['styles-dev'], function() {
   log('Watching scss files');
-  return gulp.watch(config.sass.source, ['styles']);
+  return gulp.watch(config.sass.source, ['styles-dev']);
 });
 
-gulp.task('deploy', function() {
+gulp.task('styles-build', compileStyles.bind(undefined, true));
+
+gulp.task('deploy', ['styles-build'], function() {
   var conn = ftp.create( {
       host:     config.ftp.host,
       user:     config.ftp.auth.user,
@@ -38,6 +29,20 @@ gulp.task('deploy', function() {
 });
 
 /////////////
+
+function compileStyles(minify) {
+  log('Compiling Less -> CSS');
+  return gulp
+    .src(config.sass.source, {base: config.sass.base})
+    .pipe($.print())
+    .pipe($.plumber())
+    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.autoprefixer({browsers: ['last 2 version', '> 5%']}))
+    .pipe($.concatCss(config.sass.bundle))
+    .pipe($.if(minify, $.minifyCss()))
+    .pipe($.print())
+    .pipe(gulp.dest(config.sass.dest));
+}
 
 function clean(path, done) {
     log('Cleaning: ' + $.util.colors.blue(path));
