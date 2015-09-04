@@ -287,7 +287,7 @@ pre {
           width: $nav-submenu-social-link-width;
           padding-left: 0;
           padding-right: 0;
-          background: url("images/social.png") 0 50% no-repeat;
+          background: url("../images/social.png") 0 50% no-repeat;
           color: transparent;
           text-indent: -9999px;
           padding-left: 4px;
@@ -362,7 +362,7 @@ pre {
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  background: $bg-content url("images/absurdidad.png") 0 0 repeat;
+  background: $bg-content url("../images/absurdidad.png") 0 0 repeat;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 20px;
   line-height: 28px;
@@ -373,7 +373,7 @@ pre {
   padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  background: $bg-content url("images/absurdidad.png") 0 0 repeat;
+  background: $bg-content url("../images/absurdidad.png") 0 0 repeat;
   h1 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 20px;
@@ -644,7 +644,7 @@ pre {
 
 .featured-content-secondary {
   margin-top: -1px;
-  background: $bg-content url("images/absurdidad.png") 0 0 repeat;
+  background: $bg-content url("../images/absurdidad.png") 0 0 repeat;
   article {
     margin-left: 10px;
     margin-right: 10px;
