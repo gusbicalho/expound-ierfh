@@ -237,3 +237,16 @@ add_filter( 'shortcode_atts_caption', 'expound_shortcode_atts_caption' );
 // updater for WordPress.com themes
 if ( is_admin() )
 	include dirname( __FILE__ ) . '/inc/updater.php';
+
+
+// <link href='https://fonts.googleapis.com/css?family=
+function google_fonts() {
+	$query_args = array(
+		'family' => 'Bitter:400,400italic,700|'.
+                'Open+Sans:400,400italic,700,700italic',
+		'subset' => 'latin,latin-ext'
+	);
+	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
+}
+            
+add_action('wp_enqueue_scripts', 'google_fonts');

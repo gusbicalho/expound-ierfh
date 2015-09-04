@@ -10,12 +10,14 @@ Description: Expound edited for IERFH
 
 body {
   background: $bg-body;
-  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font: $font-size-body $ff-body;
+  line-height: $line-height-body;
+  font-weight: $fw-body-normal;
 }
 
 pre, code, kbd, tt, var {
-  font: 12px/20px Consolas, Monaco, Lucida Console, monospace;
+  font: $font-size-mono $font-family-mono;
+  line-height: $line-height-mono;
 }
 
 pre {
@@ -71,8 +73,9 @@ pre {
 }
 
 .site-title {
-  font-size: 34px;
-  line-height: 34px;
+  font-size: $font-size-content-h1;
+  line-height: $line-height-site-title;
+  font-weight: $fw-headers;
   a {
     text-decoration: none;
     color: $text;
@@ -84,8 +87,9 @@ pre {
 }
 
 .site-description {
-  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font: $fs-site-desc $ff-site-desc;
+  line-height: $line-height-body;
+  font-weight: $fw-site-desc;
   color: $text-lighter;
 }
 
@@ -158,6 +162,10 @@ pre {
 }
 
 .main-small-navigation {
+  font: $fs-menu $ff-menu;
+  font-weight: $fw-menu;
+  letter-spacing: $letter-spacing-menu;
+  text-transform: $text-transform-menu;
   ul {
     display: none;
     ul {
@@ -214,6 +222,10 @@ pre {
 
 .navigation-main {
   background: $bg-navigation;
+  font: $fs-menu $ff-menu;
+  font-weight: $fw-menu;
+  letter-spacing: $letter-spacing-menu;
+  text-transform: $text-transform-menu;
   ul {
     margin: 0 ($page-padding - 10px);
   }
@@ -248,7 +260,7 @@ pre {
       .current_page_item a:after, .current-menu-item a:after, .current-post-ancestor a:after, .current-menu-parent a:after, .current-post-parent a:after {
         content: '';
         font-size: 0px;
-        line-height: 0%;
+        line-height: 0;
         width: 0px;
         border-top: $nav-current-item-arrow-size solid $current-page-item-bg;
         border-left: $nav-current-item-arrow-size solid transparent;
@@ -319,8 +331,11 @@ pre {
 .site-header .menu-toggle {
   background: $bg-navigation;
   color: $text-inverse-hard;
-  font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font: $fs-menu $ff-menu;
+  line-height: $line-height-body;
+  font-weight: $fw-menu;
+  letter-spacing: $letter-spacing-menu;
+  text-transform: $text-transform-menu;
   padding: 10px ($page-padding - 18px);
   margin: 0;
   &:hover {
@@ -328,7 +343,7 @@ pre {
   }
   &:before {
     content: '\2261';
-    font-size: 14px;
+    font-size: $font-size-menu-toggle-symbol;
     margin-right: 10px;
   }
 }
@@ -363,9 +378,9 @@ pre {
   padding-left: 40px;
   padding-right: 40px;
   background: $bg-content url("../images/absurdidad.png") 0 0 repeat;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 20px;
-  line-height: 28px;
+  font-family: $ff-headers;
+  font-size: $font-size-content-h2;
+  line-height: $line-height-h2;
 }
 
 .page-header {
@@ -375,9 +390,9 @@ pre {
   padding-right: 40px;
   background: $bg-content url("../images/absurdidad.png") 0 0 repeat;
   h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 20px;
-    line-height: 28px;
+    font-family: $ff-headers;
+    font-size: $font-size-content-h2;
+    line-height: $line-height-h2;
   }
   p {
     margin-bottom: 0;
@@ -408,7 +423,7 @@ pre {
   padding-top: 20px;
   border-bottom: solid 1px $divider-lighter;
   .related-content-title {
-    font-size: 16px;
+    font-size: $font-size-content-h3;
     margin-bottom: 0;
     margin-left: 20px;
   }
@@ -420,13 +435,12 @@ pre {
     border: none;
   }
   .entry-title {
-    font-size: 13px;
-    line-height: 18px;
     margin: -4px 0 0 0;
     padding: 0;
     clear: none;
-    font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font: $font-size-body $ff-related-title;
+    line-height: $line-height-body;
+    font-weight: $fw-body-normal;
   }
   .entry-thumbnail {
     float: left;
@@ -441,20 +455,20 @@ pre {
 
 .site-content .entry-content, .site-content .comment-content, #tinymce  {
   h1 {
-    font-size: 34px;
-    line-height: 44px;
+    font-size: $font-size-content-h1;
+    line-height: $line-height-h1;
     margin-bottom: 10px;
     margin-top: 40px;
   }
   h2 {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: $font-size-content-h2;
+    line-height: $line-height-h2;
     margin-bottom: 10px;
     margin-top: 40px;
   }
   h3 {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: $font-size-content-h3;
+    line-height: $line-height-h3;
     color: $text-light;
     margin-bottom: 10px;
     margin-top: 40px;
@@ -496,11 +510,11 @@ pre {
     background: $bg-block;
     position: relative;
     display: inline-block;
-    
+    font-family: $ff-blockquote;
     &:before {
       content: '\0201C';
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 50px;
+      font-family: $ff-blockquote-symbol;
+      font-size: $font-size-blockquote-symbol;
       position: absolute;
       left: $page-padding;
       top: 32px;
@@ -519,8 +533,8 @@ pre {
 }
 
 .single .site-content .entry-title {
-  font-size: 44px;
-  line-height: 54px;
+  font-size: $font-size-article-title;
+  line-height: $line-height-article-title;
   margin-bottom: 20px;
 }
 
@@ -533,8 +547,8 @@ pre {
     padding-bottom: 40px;
   }
   .entry-title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: $font-size-content-h2;
+    line-height: $font-size-content-h2;
     a {
       color: $text;
       &:hover {
@@ -543,8 +557,8 @@ pre {
     }
   }
   .entry-meta {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: $font-size-list-article-meta;
+    line-height: $line-height-article-title;
     color: $text-meta;
     margin-top: 15px;
     a {
@@ -560,10 +574,10 @@ pre {
     word-wrap: break-word;
   }
   .entry-header .entry-meta {
-    font-size: 12px;
+    font-size: $font-size-list-article-meta;
     .author {
       color: $text;
-      font-weight: 600;
+      font-weight: $fw-body-bold;
     }
   }
 }
@@ -602,8 +616,8 @@ pre {
     border-bottom: solid 1px $divider-lighter;
   }
   .entry-title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: $font-size-content-h2;
+    line-height: $line-height-h2;
     a {
       color: $text;
       &:hover {
@@ -655,8 +669,8 @@ pre {
     margin-bottom: 20px;
   }
   .entry-title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: $font-size-content-h2;
+    line-height: $line-height-h2;
     a {
       color: $text;
       &:hover {
@@ -690,7 +704,7 @@ article:hover {
   top: 8px;
   background: $bg-thumbnail;
   padding: 2px 8px;
-  font-size: 8px;
+  font-size: $font-size-small;
   text-transform: uppercase;
   color: $text-thumbnail;
   &:hover {
@@ -706,7 +720,7 @@ article:hover {
   &:before {
     content: '';
     font-size: 0px;
-    line-height: 0%;
+    line-height: 0;
     width: 0px;
     border-top: 6px solid $thumbnail-divider;
     border-left: 6px solid transparent;
@@ -824,8 +838,8 @@ embed, iframe, object {
   padding-left: $page-padding;
   margin-top: 40px;
   .comments-title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: $font-size-content-h2;
+    line-height: $line-height-h2;
   }
   .comment-list {
     list-style: none;
@@ -853,10 +867,10 @@ embed, iframe, object {
   }
   .comment-content {
     h1 {
-      font-size: 16px;
+      font-size: $font-size-comment-h1;
     }
     h2, h3, h4, h5, h6 {
-      font-size: 13px;
+      font-size: $font-size-body;
     }
     h1, h2, h3, h4, h5 {
       margin: 20px 0;
@@ -881,9 +895,9 @@ embed, iframe, object {
       display: none;
     }
     .comment-author {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 20px;
-      line-height: 28px;
+      font-family: $ff-headers;
+      font-size: $font-size-body;
+      line-height: $line-height-body;
       a {
         text-decoration: none;
         color: $text;
@@ -902,11 +916,11 @@ embed, iframe, object {
       margin-left: 4px;
       color: $text-meta;
       text-decoration: none;
-      font-size: 12px;
+      font-size: $font-size-list-article-meta;
       a {
         color: $text-meta;
         text-decoration: none;
-        font-size: 12px;
+        font-size: $font-size-list-article-meta;
       }
       &:hover, a:hover {
         color: $link-hover;
@@ -918,8 +932,8 @@ embed, iframe, object {
     padding-top: 40px;
   }
   #reply-title {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: $font-size-content-h2;
+    line-height: $line-height-h2;
   }
 }
 
@@ -958,7 +972,7 @@ embed, iframe, object {
     }
   }
   .widget-title {
-    font-size: 16px;
+    font-size: $font-size-content-h3;
     margin-bottom: 20px;
     a {
       color: $text;
@@ -1037,7 +1051,7 @@ h3.sd-title {
     background: $bg-block;
   }
   #today {
-    font-weight: bold;
+    font-weight: $fw-body-bold;
   }
 }
 
@@ -1248,13 +1262,13 @@ h3.sd-title {
     }
   }
   .single .site-content .entry-title {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: $font-size-article-title-700;
+    line-height: $line-height-h1;
   }
   .site-content {
     .entry-content h1, .comment-content h1 {
-      font-size: 28px;
-      line-height: 38px;
+      font-size: $font-size-article-title-700;
+      line-height: $line-height-h1;
     }
   }
   .single .site-content {

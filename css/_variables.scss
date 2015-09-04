@@ -96,3 +96,71 @@ $content-gallery-image-max-width: 90%;
 $secondary-width: $page-quarter + 40px;
 
 $thumbnail-width-700: 100%;
+
+// Typography /////////////////////////////////////////////
+
+$font-family-sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Bitter", Georgia, "Times New Roman", serif;
+$font-family-mono: Consolas, Monaco, Lucida Console, monospace;
+
+$fw-sans-normal: 400;
+$fw-sans-bold: bold;
+$fw-serif-normal: 400;
+$fw-serif-bold: bold;
+
+//*
+$ff-headers: $font-family-serif;
+$ff-body: $font-family-sans;
+$fw-body-normal: $fw-sans-normal;
+$fw-body-bold: $fw-sans-bold;
+$fw-headers: $fw-serif-bold;
+/*/
+$ff-headers: $font-family-sans;
+$ff-body: $font-family-serif;
+$fw-body-normal: $fw-serif-normal;
+$fw-body-bold: $fw-serif-bold;
+$fw-headers: $fw-sans-bold;
+//*/
+$ff-inputs: $ff-body;
+$ff-buttons: $font-family-sans;
+
+$ff-site-desc: $ff-body;
+$ff-menu: $ff-body;
+$ff-related-title: $ff-body;
+$ff-blockquote: $ff-body;
+$ff-blockquote-symbol: $font-family-serif;
+
+$font-size-body: 14px;
+$font-size-inputs: $font-size-body;
+$font-size-buttons: $font-size-body;
+$font-size-mono: 12px;
+$font-size-small: 75%;
+$font-size-big: 125%;
+$font-size-content-h1: 34px;
+$font-size-content-h2: 20px;
+$font-size-content-h3: 16px;
+$font-size-article-title: 44px;
+$font-size-article-title-700: 28px;
+$font-size-blockquote-symbol: 50px;
+$font-size-list-article-meta: 12px;
+$font-size-comment-h1: $font-size-content-h3;
+$font-size-menu-toggle-symbol: 14px;
+
+$line-height-body: 1.5;
+$line-height-mono: 1.6;
+$line-height-h1: 1.3;
+$line-height-h2: 1.3;
+$line-height-h3: 1.15;
+$line-height-article-title: 1.25;
+$line-height-site-title: 1;
+
+$fs-site-desc: $font-size-body;
+$fs-menu: $font-size-body;
+
+$fw-buttons: $fw-sans-normal;
+$fw-inputs: $fw-sans-normal;
+$fw-site-desc: $fw-body-normal;
+$fw-menu: $fw-body-normal;
+
+$letter-spacing-menu: 0.075em;
+$text-transform-menu: uppercase;
