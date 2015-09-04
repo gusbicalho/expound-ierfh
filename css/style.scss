@@ -515,9 +515,10 @@ pre {
       content: '\0201C';
       font-family: $ff-blockquote-symbol;
       font-size: $font-size-blockquote-symbol;
+      line-height: 1;
       position: absolute;
       left: $page-padding;
-      top: 32px;
+      top: 20px;
       color: $text-meta;
     }
     

@@ -1277,9 +1277,10 @@ pre {
   content: '\0201C';
   font-family: "Bitter", Georgia, "Times New Roman", serif;
   font-size: 50px;
+  line-height: 1;
   position: absolute;
   left: 40px;
-  top: 32px;
+  top: 20px;
   color: #aaa;
 }
 
