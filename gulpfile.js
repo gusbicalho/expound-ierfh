@@ -46,7 +46,10 @@ function compileStyles(minify) {
 
 function clean(path, done) {
     log('Cleaning: ' + $.util.colors.blue(path));
-    del(path, done);
+    del(path)
+      .then(
+        function(paths) { done(null, paths); },
+        done);
 }
 
 function log(msg) {
