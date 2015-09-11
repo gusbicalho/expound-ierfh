@@ -728,7 +728,7 @@ article:hover {
     border-left: 6px solid transparent;
     position: absolute;
     left: 0px;
-    top: 24px;
+    top: ($fs-small * $fs-body * $line-height-body) / 100% + 4px; // line height + vertical padding
   }
 }
 
