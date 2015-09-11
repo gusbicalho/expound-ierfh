@@ -343,11 +343,11 @@ img {
 /* links */
 
 a {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 a:active {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 a:hover {
@@ -368,13 +368,9 @@ textarea {
   /* Improves appearance and consistency in all browsers */
 }
 
-button {
-  line-height: normal;
-  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
-}
-
 input {
-  line-height: normal;
+  font: 15px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
   /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
 }
 
@@ -398,12 +394,6 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-button::-moz-focus-inner {
-  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-  border: 0;
-  padding: 0;
-}
-
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
   border: 0;
@@ -418,19 +408,10 @@ input[type="search"] {
   border: 1px solid #ccc;
 }
 
-textarea {
-  color: #666;
-  border: 1px solid #ccc;
-}
-
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus {
-  color: #111;
-}
-
-textarea:focus {
   color: #111;
 }
 
@@ -442,6 +423,10 @@ input[type="search"] {
 }
 
 textarea {
+  font: 15px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #666;
+  border: 1px solid #ccc;
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
   padding-left: 3px;
@@ -450,15 +435,13 @@ textarea {
   width: 98%;
 }
 
-input,
-textarea {
-  font: 15px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+textarea:focus {
+  color: #111;
 }
 
 button {
   display: inline-block;
-  background: #117bb8;
+  background: #546E7A;
   color: #fff;
   text-decoration: none;
   padding: 10px;
@@ -466,13 +449,28 @@ button {
   font-weight: 400;
   cursor: pointer;
   font-size: 100%;
+  line-height: normal;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+}
+
+button::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background: #5e7c89;
 }
 
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   display: inline-block;
-  background: #117bb8;
+  background: #546E7A;
   color: #fff;
   text-decoration: none;
   padding: 10px;
@@ -480,6 +478,19 @@ input[type="submit"] {
   font-weight: 400;
   cursor: pointer;
   font-size: 100%;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="button"]:active,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:active,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:active {
+  background: #5e7c89;
 }
 
 .button-primary,
@@ -487,59 +498,30 @@ a.button-primary,
 .wpm-button-primary,
 a.wpm-button-primary {
   display: inline-block;
-  background: #117bb8;
-  color: #fff;
+  background: #FFD740;
+  color: #3a3a3a;
   text-decoration: none;
   padding: 10px;
   border: none;
   font-weight: 400;
   cursor: pointer;
   font-size: 100%;
-}
-
-button:hover {
-  background: #138bcf;
-}
-
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  background: #138bcf;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
 
 .button-primary:hover,
-a.button-primary:hover,
-.wpm-button-primary:hover,
-a.wpm-button-primary:hover,
-button:focus {
-  background: #138bcf;
-}
-
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus {
-  background: #138bcf;
-}
-
 .button-primary:focus,
-a.button-primary:focus,
-.wpm-button-primary:focus,
-a.wpm-button-primary:focus,
-button:active {
-  background: #138bcf;
-}
-
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-  background: #138bcf;
-}
-
 .button-primary:active,
+a.button-primary:hover,
+a.button-primary:focus,
 a.button-primary:active,
+.wpm-button-primary:hover,
+.wpm-button-primary:focus,
 .wpm-button-primary:active,
+a.wpm-button-primary:hover,
+a.wpm-button-primary:focus,
 a.wpm-button-primary:active {
-  background: #138bcf;
+  background: #ffdc5a;
 }
 
 .button,
@@ -548,7 +530,8 @@ a.button,
 a.wpm-button {
   display: inline-block;
   background: #3a3a3a;
-  color: white;
+  color: #fff;
+  border: none;
   text-decoration: none;
   padding: 10px;
 }
@@ -557,7 +540,7 @@ a.wpm-button {
 a.button:hover,
 .wpm-button:hover,
 a.wpm-button:hover {
-  background: #474747;
+  background: #545454;
 }
 
 /* Alignment */
@@ -642,7 +625,7 @@ a.wpm-button:hover {
 }
 
 body {
-  background: #343434;
+  background: #cfd8dc;
   font: 15px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -671,7 +654,8 @@ pre {
 #page {
   background: #fff;
   width: 1020px;
-  margin: 40px auto;
+  margin: 2px auto 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
 }
 
 .site-main {
@@ -691,6 +675,7 @@ pre {
 
 .site-header .site-branding {
   position: relative;
+  background-color: #fff;
 }
 
 .site-title-group {
@@ -718,19 +703,19 @@ pre {
 
 .site-title a {
   text-decoration: none;
-  color: #3a3a3a;
+  color: #37474f;
   display: block;
 }
 
 .site-title:hover a {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 .site-description {
   font: 15px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #878787;
+  color: rgba(55, 71, 79, 0.75);
 }
 
 .expound-custom-header {
@@ -826,7 +811,7 @@ pre {
 }
 
 .main-small-navigation .menu-toggle {
-  background: #474747;
+  background: #5e7c89;
 }
 
 .main-small-navigation ul {
@@ -842,11 +827,11 @@ pre {
 }
 
 .main-small-navigation li {
-  background: #3a3a3a;
+  background: #546E7A;
 }
 
 .main-small-navigation li:hover {
-  background: #474747;
+  background: #5e7c89;
 }
 
 .main-small-navigation ul ul a {
@@ -859,7 +844,7 @@ pre {
 
 .main-small-navigation ul > .current_page_item,
 .main-small-navigation ul > .current-menu-item {
-  background: #117bb8;
+  background: #37474f;
 }
 
 @media screen and (max-width: 600px) {
@@ -874,7 +859,7 @@ pre {
 }
 
 .navigation-main {
-  background: #3a3a3a;
+  background: #546E7A;
   font: 14px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -892,11 +877,11 @@ pre {
 }
 
 .navigation-main li {
-  background: #3a3a3a;
+  background: #546E7A;
 }
 
 .navigation-main li:hover {
-  background: #474747;
+  background: #5e7c89;
 }
 
 .navigation-main ul > .current_page_item,
@@ -905,7 +890,7 @@ pre {
 .navigation-main ul > .current-menu-ancestor,
 .navigation-main ul > .current-menu-parent,
 .navigation-main ul > .current-post-parent {
-  background: #117bb8;
+  background: #37474f;
 }
 
 .navigation-main ul > .current_page_item:hover,
@@ -914,7 +899,7 @@ pre {
 .navigation-main ul > .current-menu-ancestor:hover,
 .navigation-main ul > .current-menu-parent:hover,
 .navigation-main ul > .current-post-parent:hover {
-  background: #138bcf;
+  background: #41555e;
 }
 
 .navigation-main ul > .current_page_item:hover a:after,
@@ -923,7 +908,7 @@ pre {
 .navigation-main ul > .current-menu-ancestor:hover a:after,
 .navigation-main ul > .current-menu-parent:hover a:after,
 .navigation-main ul > .current-post-parent:hover a:after {
-  border-top-color: #138bcf;
+  border-top-color: #41555e;
 }
 
 .navigation-main ul > .current_page_item ~ .current_page_item a,
@@ -931,7 +916,7 @@ pre {
 .navigation-main ul > .current-post-ancestor ~ .current-post-ancestor a,
 .navigation-main ul > .current-menu-parent ~ .current-menu-parent a,
 .navigation-main ul > .current-post-parent ~ .current-post-parent a {
-  background: #3a3a3a;
+  background: #546E7A;
 }
 
 .navigation-main ul > .current_page_item ~ .current_page_item a:hover,
@@ -939,7 +924,7 @@ pre {
 .navigation-main ul > .current-post-ancestor ~ .current-post-ancestor a:hover,
 .navigation-main ul > .current-menu-parent ~ .current-menu-parent a:hover,
 .navigation-main ul > .current-post-parent ~ .current-post-parent a:hover {
-  background: #474747;
+  background: #5e7c89;
 }
 
 .navigation-main ul > .current_page_item a:after,
@@ -951,7 +936,7 @@ pre {
   font-size: 0px;
   line-height: 0;
   width: 0px;
-  border-top: 6px solid #117bb8;
+  border-top: 6px solid #37474f;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   position: absolute;
@@ -1029,7 +1014,7 @@ pre {
 }
 
 .site-header .menu-toggle {
-  background: #3a3a3a;
+  background: #546E7A;
   color: #fff;
   font: 14px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -1041,7 +1026,7 @@ pre {
 }
 
 .site-header .menu-toggle:hover {
-  background: #474747;
+  background: #5e7c89;
 }
 
 .site-header .menu-toggle:before {
@@ -1303,7 +1288,7 @@ pre {
 }
 
 .site-content .entry-title a:hover {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 .site-content .entry-meta {
@@ -1319,7 +1304,7 @@ pre {
 }
 
 .site-content .entry-meta a:hover {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 .site-content .entry-content,
@@ -1398,7 +1383,7 @@ pre {
 }
 
 .featured-content .entry-title a:hover {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 .featured-content .has-post-thumbnail .entry-thumbnail {
@@ -1464,7 +1449,7 @@ pre {
 }
 
 .featured-content-secondary .entry-title a:hover {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 article:hover .entry-thumbnail img {
@@ -1472,7 +1457,7 @@ article:hover .entry-thumbnail img {
 }
 
 article:hover .entry-title a {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 .entry-thumbnail {
@@ -1497,11 +1482,11 @@ article:hover .entry-title a {
 }
 
 .entry-thumbnail-category:hover {
-  background: #117bb8;
+  background: #37474f;
 }
 
 .entry-thumbnail-category:hover:before {
-  border-top: 6px solid #0d5c89;
+  border-top: 6px solid #3f535c;
 }
 
 .entry-thumbnail-category a {
@@ -1730,7 +1715,7 @@ object {
 }
 
 .comments-area footer .comment-author a:hover {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 .comments-area footer .comment-author .avatar {
@@ -1755,7 +1740,7 @@ object {
 
 .comments-area footer .comment-meta:hover,
 .comments-area footer .comment-meta a:hover {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 .comments-area #respond {
@@ -1818,7 +1803,7 @@ object {
 }
 
 .widget-area .widget-title a:hover {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 .widget-area .widget_recent_entries .post-date {
@@ -1831,7 +1816,7 @@ object {
 }
 
 .widget-area .widget_twitter a:hover {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 .widget-area .widget_twitter .timesince {
@@ -1948,7 +1933,7 @@ h3.sd-title {
 }
 
 #infinite-handle span {
-  background-color: #117bb8;
+  background-color: #546E7A;
   border: 0;
   color: #fff;
   display: inline-block;
@@ -1973,7 +1958,7 @@ h3.sd-title {
 }
 
 .site-footer a:hover {
-  color: #117bb8;
+  color: #546E7A;
 }
 
 /* =Media Queries
@@ -2063,7 +2048,7 @@ h3.sd-title {
 
 @media (max-width: 900px) {
   #page {
-    width: 87%;
+    width: 95%;
   }
 
   #primary {
@@ -2173,6 +2158,6 @@ h3.sd-title {
 
 @media (max-width: 600px) {
   #page {
-    width: 85%;
+    width: 99%;
   }
 }

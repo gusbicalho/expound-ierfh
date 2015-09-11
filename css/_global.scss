@@ -198,13 +198,10 @@ button, input, select, textarea {
   /* Improves appearance and consistency in all browsers */
 }
 
-button {
-  line-height: normal;
-  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
-}
-
 input {
-  line-height: normal;
+  font: $fs-inputs $ff-inputs;
+  line-height: $line-height-body;
+
   /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
   &[type="checkbox"], &[type="radio"] {
     box-sizing: border-box;
@@ -222,15 +219,6 @@ input {
       -webkit-appearance: none;
     }
   }
-}
-
-button::-moz-focus-inner {
-  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
-  border: 0;
-  padding: 0;
-}
-
-input {
   &::-moz-focus-inner {
     /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
     border: 0;
@@ -240,126 +228,106 @@ input {
     color: $steel;
     border: 1px solid $iron;
   }
-}
-
-textarea {
-  color: $steel;
-  border: 1px solid $iron;
-}
-
-input {
   &[type="text"]:focus, &[type="email"]:focus, &[type="password"]:focus, &[type="search"]:focus {
     color: $night;
   }
-}
-
-textarea:focus {
-  color: $night;
-}
-
-input {
   &[type="text"], &[type="email"], &[type="password"], &[type="search"] {
     padding: 3px;
   }
 }
 
 textarea {
+  font: $fs-inputs $ff-inputs;
+  line-height: $line-height-body;
+  color: $steel;
+  border: 1px solid $iron;
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
   padding-left: 3px;
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
   width: 98%;
-}
-
-input, textarea {
-  font: $fs-inputs $ff-inputs;
-  line-height: $line-height-body;
+  
+  &:focus {
+    color: $night;
+  }
 }
 
 button {
   display: inline-block;
-  background: $primary;
-  color: $white;
+  background: $bg-button;
+  color: $text-button;
   text-decoration: none;
   padding: 10px;
-  border: none;
+  border: $border-button;
   font-weight: $fw-buttons;
-;
   cursor: pointer;
   font-size: 100%;
+  line-height: normal;
+
+  @include card(1);
+  
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+  &::-moz-focus-inner {
+    /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+    border: 0;
+    padding: 0;
+  }
+  &:hover, &:focus, &:active {
+    background: $bg-button-hover;
+  }
 }
 
 input {
   &[type="button"], &[type="reset"], &[type="submit"] {
     display: inline-block;
-    background: $primary;
-    color: $white;
+    background: $bg-button;
+    color: $text-button;
     text-decoration: none;
     padding: 10px;
-    border: none;
+    border: $border-button;
     font-weight: $fw-buttons;
     cursor: pointer;
     font-size: 100%;
+    
+    @include card(1);
+  
+    &:hover, &:focus, &:active {
+      background: $bg-button-hover;
+    }
   }
 }
+
 
 .button-primary, a.button-primary, .wpm-button-primary, a.wpm-button-primary {
   display: inline-block;
-  background: $primary;
-  color: $white;
+  background: $bg-button-primary;
+  color: $text-button-primary;
   text-decoration: none;
   padding: 10px;
-  border: none;
+  border: $border-button-primary;
   font-weight: $fw-buttons;
   cursor: pointer;
   font-size: 100%;
-}
-
-button:hover {
-  background: lighten($primary, 5%);
-}
-
-input {
-  &[type="button"]:hover, &[type="reset"]:hover, &[type="submit"]:hover {
-    background: lighten($primary, 5%);
+  
+  @include card(1);
+  
+  &:hover, &:focus, &:active {
+    background: $bg-button-primary-hover;
   }
-}
-
-.button-primary:hover, a.button-primary:hover, .wpm-button-primary:hover, a.wpm-button-primary:hover, button:focus {
-  background: lighten($primary, 5%);
-}
-
-input {
-  &[type="button"]:focus, &[type="reset"]:focus, &[type="submit"]:focus {
-    background: lighten($primary, 5%);
-  }
-}
-
-.button-primary:focus, a.button-primary:focus, .wpm-button-primary:focus, a.wpm-button-primary:focus, button:active {
-  background: lighten($primary, 5%);
-}
-
-input {
-  &[type="button"]:active, &[type="reset"]:active, &[type="submit"]:active {
-    background: lighten($primary, 5%);
-  }
-}
-
-.button-primary:active, a.button-primary:active, .wpm-button-primary:active, a.wpm-button-primary:active {
-  background: lighten($primary, 5%);
 }
 
 .button, a.button, .wpm-button, a.wpm-button {
   display: inline-block;
-  background: $text;
-  color: white;
+  background: $bg-button-dark;
+  color: $text-button-dark;
+  border: $border-button-dark;
   text-decoration: none;
   padding: 10px;
-}
-
-.button:hover, a.button:hover, .wpm-button:hover, a.wpm-button:hover {
-  background: lighten($text, 5%);
+  
+  &:hover {
+    background: lighten($bg-button-dark-hover, 5%);
+  }
 }
 
 /* Alignment */

@@ -6,6 +6,15 @@ $dark: #3a3a3a;
 
 $primary: #117bb8;
 
+$primary-lightest: #cfd8dc;
+$primary-light: #78909C;
+$primary: #546E7A;
+$primary-dark: #37474f;
+$primary-darkest: #263238;
+
+$accent: #FFD740;
+$accent-dark: #FFAB00;
+
 // Uses of Light
 $bg-body: darken($dark, 2.5%);
 
@@ -37,13 +46,37 @@ $twitter-divider: lighten($light, 30%);
 
 $inf-handle-bg-hover: darken($dark, 2.5%);
 
-// Uses of Primary
+// Uses of Primary/Accent
+$bg-body: $primary-lightest;
+$bg-navigation: $primary;
+$bg-navigation-hover: lighten($bg-navigation, 5%);
+
+$bg-branding: $bg-content;
+$text-site-title: $primary-dark;
+$text-site-title-hover: $primary;
+$text-site-desc: fade-out($text-site-title, 0.25);
+
 $title-hover: $primary;
 $link-hover: $primary;
-$current-page-item-bg: $primary;
-$current-page-item-bg-hover: lighten($primary, 5%);
-$thumbnail-bg-hover: $primary;
+$current-page-item-bg: $primary-dark;
+$current-page-item-bg-hover: lighten($primary-dark, 5%);
+$thumbnail-bg-hover: $primary-dark;
 $thumbnail-divider-hover: darken($primary, 10%);
+
+$bg-button: $primary;
+$bg-button-hover: lighten($bg-button, 5%);
+$border-button: none;
+$text-button: $text-inverse-hard;
+
+$bg-button-primary: $accent;
+$bg-button-primary-hover: lighten($bg-button-primary, 5%);
+$border-button-primary: none;
+$text-button-primary: $text;
+
+$bg-button-dark: $text;
+$bg-button-dark-hover: lighten($bg-button-dark, 5%);
+$border-button-dark: none;
+$text-button-dark: $text-inverse-hard;
 
 $inf-handle-bg: $primary;
 
@@ -53,10 +86,10 @@ $page-width: 1020px;
 $page-width-1080: 960px;
 $page-width-1020: 900px;
 $page-width-960: 840px;
-$page-width-900: 87%;
-$page-width-600: 85%;
+$page-width-900: 95%;
+$page-width-600: 99%;
 
-$page-margin: 40px auto;
+$page-margin: 2px auto 20px;
 $page-padding: 40px; // used in several places, sometimes as margins of children
 
 $page-quarter: ($page-width - 2*$page-padding)/4 - 15px;
