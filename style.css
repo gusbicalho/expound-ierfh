@@ -4,14 +4,6 @@ Theme URI: https://wordpress.com/themes/expound/
 Description: Expound edited for IERFH
 */
 
-/*/
-$ff-headers: $font-family-sans;
-$ff-body: $font-family-serif;
-$fw-body-normal: $fw-serif-normal;
-$fw-body-bold: $fw-serif-bold;
-$fw-headers: $fw-sans-bold;
-//*/
-
 /* =Reset
 -------------------------------------------------------------- */
 
@@ -157,14 +149,6 @@ a img {
   border: 0;
 }
 
-/*/
-$ff-headers: $font-family-sans;
-$ff-body: $font-family-serif;
-$fw-body-normal: $fw-serif-normal;
-$fw-body-bold: $fw-serif-bold;
-$fw-headers: $fw-sans-bold;
-//*/
-
 /* =Global
 ----------------------------------------------- */
 
@@ -178,20 +162,20 @@ textarea {
 }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
 }
 
 button {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
 }
 
 input,
 select,
 textarea {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
 }
 
 /* Headings */
@@ -205,15 +189,15 @@ h6 {
   clear: both;
 }
 
-h1,
 h2,
 h3 {
-  font-family: "Bitter", Georgia, "Times New Roman", serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
-h2,
-h3 {
-  font-weight: bold;
+h1 {
+  font-family: Raleway, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
 hr {
@@ -249,7 +233,7 @@ li > ol {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 dd {
@@ -258,7 +242,7 @@ dd {
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 dfn,
@@ -279,7 +263,7 @@ address {
 pre {
   background: #eee;
   font-family: Consolas, Monaco, Lucida Console, monospace;
-  font-size: 12px;
+  font-size: 95%;
   line-height: 1.6;
   margin-bottom: 1.6em;
   padding: 1.6em;
@@ -291,7 +275,7 @@ code,
 kbd,
 tt,
 var {
-  font: 12px Consolas, Monaco, Lucida Console, monospace;
+  font: 95% Consolas, Monaco, Lucida Console, monospace;
 }
 
 abbr,
@@ -341,7 +325,7 @@ table {
 }
 
 th {
-  font-weight: bold;
+  font-weight: 700;
   vertical-align: middle;
 }
 
@@ -468,7 +452,7 @@ textarea {
 
 input,
 textarea {
-  font: 14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 15px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -659,7 +643,7 @@ a.wpm-button:hover {
 
 body {
   background: #343434;
-  font: 14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 15px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -669,7 +653,7 @@ code,
 kbd,
 tt,
 var {
-  font: 12px Consolas, Monaco, Lucida Console, monospace;
+  font: 95% Consolas, Monaco, Lucida Console, monospace;
   line-height: 1.6;
 }
 
@@ -726,9 +710,10 @@ pre {
 }
 
 .site-title {
-  font-size: 34px;
+  font-family: Raleway, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 37.5px;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .site-title a {
@@ -742,7 +727,7 @@ pre {
 }
 
 .site-description {
-  font: 14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 15px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #878787;
@@ -822,7 +807,7 @@ pre {
 }
 
 .main-small-navigation {
-  font: 14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0.075em;
   text-transform: uppercase;
@@ -890,7 +875,7 @@ pre {
 
 .navigation-main {
   background: #3a3a3a;
-  font: 14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0.075em;
   text-transform: uppercase;
@@ -1046,7 +1031,7 @@ pre {
 .site-header .menu-toggle {
   background: #3a3a3a;
   color: #fff;
-  font: 14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -1097,8 +1082,8 @@ pre {
   padding-left: 40px;
   padding-right: 40px;
   background: #fff url("images/absurdidad.png") 0 0 repeat;
-  font-family: "Bitter", Georgia, "Times New Roman", serif;
-  font-size: 20px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22.5px;
   line-height: 1.3;
 }
 
@@ -1111,8 +1096,8 @@ pre {
 }
 
 .page-header h1 {
-  font-family: "Bitter", Georgia, "Times New Roman", serif;
-  font-size: 20px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22.5px;
   line-height: 1.3;
 }
 
@@ -1146,7 +1131,7 @@ pre {
 }
 
 .single .site-content .related-content .related-content-title {
-  font-size: 16px;
+  font-size: 18.75px;
   margin-bottom: 0;
   margin-left: 20px;
 }
@@ -1163,7 +1148,7 @@ pre {
   margin: -4px 0 0 0;
   padding: 0;
   clear: none;
-  font: 14px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 15px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -1183,7 +1168,7 @@ pre {
 .site-content .entry-content h1,
 .site-content .comment-content h1,
 #tinymce h1 {
-  font-size: 34px;
+  font-size: 37.5px;
   line-height: 1.3;
   margin-bottom: 10px;
   margin-top: 40px;
@@ -1192,7 +1177,7 @@ pre {
 .site-content .entry-content h2,
 .site-content .comment-content h2,
 #tinymce h2 {
-  font-size: 20px;
+  font-size: 22.5px;
   line-height: 1.3;
   margin-bottom: 10px;
   margin-top: 40px;
@@ -1201,7 +1186,7 @@ pre {
 .site-content .entry-content h3,
 .site-content .comment-content h3,
 #tinymce h3 {
-  font-size: 16px;
+  font-size: 18.75px;
   line-height: 1.15;
   color: #606060;
   margin-bottom: 10px;
@@ -1268,15 +1253,15 @@ pre {
   background: #f6f6f6;
   position: relative;
   display: inline-block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .site-content .entry-content blockquote:before,
 .site-content .comment-content blockquote:before,
 #tinymce blockquote:before {
   content: '\0201C';
-  font-family: "Bitter", Georgia, "Times New Roman", serif;
-  font-size: 50px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 52.5px;
   line-height: 1;
   position: absolute;
   left: 40px;
@@ -1295,7 +1280,7 @@ pre {
 }
 
 .single .site-content .entry-title {
-  font-size: 44px;
+  font-size: 45px;
   line-height: 1.25;
   margin-bottom: 20px;
 }
@@ -1309,8 +1294,8 @@ pre {
 }
 
 .site-content .entry-title {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 22.5px;
+  line-height: 22.5px;
 }
 
 .site-content .entry-title a {
@@ -1322,7 +1307,7 @@ pre {
 }
 
 .site-content .entry-meta {
-  font-size: 12px;
+  font-size: 12.75px;
   line-height: 1.25;
   color: #aaa;
   margin-top: 15px;
@@ -1345,12 +1330,12 @@ pre {
 }
 
 .site-content .entry-header .entry-meta {
-  font-size: 12px;
+  font-size: 12.75px;
 }
 
 .site-content .entry-header .entry-meta .author {
   color: #3a3a3a;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .blog .site-content .has-post-thumbnail .entry-thumbnail,
@@ -1404,7 +1389,7 @@ pre {
 }
 
 .featured-content .entry-title {
-  font-size: 20px;
+  font-size: 22.5px;
   line-height: 1.3;
 }
 
@@ -1470,7 +1455,7 @@ pre {
 }
 
 .featured-content-secondary .entry-title {
-  font-size: 20px;
+  font-size: 22.5px;
   line-height: 1.3;
 }
 
@@ -1655,7 +1640,7 @@ object {
 }
 
 .comments-area .comments-title {
-  font-size: 20px;
+  font-size: 22.5px;
   line-height: 1.3;
 }
 
@@ -1688,7 +1673,7 @@ object {
 }
 
 .comments-area .comment-content h1 {
-  font-size: 16px;
+  font-size: 18.75px;
 }
 
 .comments-area .comment-content h2,
@@ -1696,7 +1681,7 @@ object {
 .comments-area .comment-content h4,
 .comments-area .comment-content h5,
 .comments-area .comment-content h6 {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .comments-area .comment-content h1,
@@ -1734,8 +1719,8 @@ object {
 }
 
 .comments-area footer .comment-author {
-  font-family: "Bitter", Georgia, "Times New Roman", serif;
-  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -1759,13 +1744,13 @@ object {
   margin-left: 4px;
   color: #aaa;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 12.75px;
 }
 
 .comments-area footer .comment-meta a {
   color: #aaa;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 12.75px;
 }
 
 .comments-area footer .comment-meta:hover,
@@ -1779,7 +1764,7 @@ object {
 }
 
 .comments-area #reply-title {
-  font-size: 20px;
+  font-size: 22.5px;
   line-height: 1.3;
 }
 
@@ -1824,7 +1809,7 @@ object {
 }
 
 .widget-area .widget-title {
-  font-size: 16px;
+  font-size: 18.75px;
   margin-bottom: 20px;
 }
 
@@ -1913,7 +1898,7 @@ h3.sd-title {
 }
 
 .widget.widget_calendar #today {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* Full-width Template */
@@ -2154,13 +2139,13 @@ h3.sd-title {
   }
 
   .single .site-content .entry-title {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 1.3;
   }
 
   .site-content .entry-content h1,
   .site-content .comment-content h1 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 1.3;
   }
 

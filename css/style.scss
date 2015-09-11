@@ -10,13 +10,13 @@ Description: Expound edited for IERFH
 
 body {
   background: $bg-body;
-  font: $font-size-body $ff-body;
+  font: $fs-body $ff-body;
   line-height: $line-height-body;
   font-weight: $fw-body-normal;
 }
 
 pre, code, kbd, tt, var {
-  font: $font-size-mono $font-family-mono;
+  font: $fs-mono $ff-mono;
   line-height: $line-height-mono;
 }
 
@@ -73,9 +73,10 @@ pre {
 }
 
 .site-title {
-  font-size: $font-size-content-h1;
+  font-family: $ff-site-title;
+  font-size: $fs-content-h1;
   line-height: $line-height-site-title;
-  font-weight: $fw-headers;
+  font-weight: $fw-site-title;
   a {
     text-decoration: none;
     color: $text;
@@ -343,7 +344,7 @@ pre {
   }
   &:before {
     content: '\2261';
-    font-size: $font-size-menu-toggle-symbol;
+    font-size: $fs-menu-toggle-symbol;
     margin-right: 10px;
   }
 }
@@ -379,7 +380,7 @@ pre {
   padding-right: 40px;
   background: $bg-content url("../images/absurdidad.png") 0 0 repeat;
   font-family: $ff-headers;
-  font-size: $font-size-content-h2;
+  font-size: $fs-content-h2;
   line-height: $line-height-h2;
 }
 
@@ -391,7 +392,7 @@ pre {
   background: $bg-content url("../images/absurdidad.png") 0 0 repeat;
   h1 {
     font-family: $ff-headers;
-    font-size: $font-size-content-h2;
+    font-size: $fs-content-h2;
     line-height: $line-height-h2;
   }
   p {
@@ -423,7 +424,7 @@ pre {
   padding-top: 20px;
   border-bottom: solid 1px $divider-lighter;
   .related-content-title {
-    font-size: $font-size-content-h3;
+    font-size: $fs-content-h3;
     margin-bottom: 0;
     margin-left: 20px;
   }
@@ -438,7 +439,7 @@ pre {
     margin: -4px 0 0 0;
     padding: 0;
     clear: none;
-    font: $font-size-body $ff-related-title;
+    font: $fs-body $ff-related-title;
     line-height: $line-height-body;
     font-weight: $fw-body-normal;
   }
@@ -455,19 +456,19 @@ pre {
 
 .site-content .entry-content, .site-content .comment-content, #tinymce  {
   h1 {
-    font-size: $font-size-content-h1;
+    font-size: $fs-content-h1;
     line-height: $line-height-h1;
     margin-bottom: 10px;
     margin-top: 40px;
   }
   h2 {
-    font-size: $font-size-content-h2;
+    font-size: $fs-content-h2;
     line-height: $line-height-h2;
     margin-bottom: 10px;
     margin-top: 40px;
   }
   h3 {
-    font-size: $font-size-content-h3;
+    font-size: $fs-content-h3;
     line-height: $line-height-h3;
     color: $text-light;
     margin-bottom: 10px;
@@ -514,7 +515,7 @@ pre {
     &:before {
       content: '\0201C';
       font-family: $ff-blockquote-symbol;
-      font-size: $font-size-blockquote-symbol;
+      font-size: $fs-blockquote-symbol;
       line-height: 1;
       position: absolute;
       left: $page-padding;
@@ -534,7 +535,7 @@ pre {
 }
 
 .single .site-content .entry-title {
-  font-size: $font-size-article-title;
+  font-size: $fs-article-title;
   line-height: $line-height-article-title;
   margin-bottom: 20px;
 }
@@ -548,8 +549,8 @@ pre {
     padding-bottom: 40px;
   }
   .entry-title {
-    font-size: $font-size-content-h2;
-    line-height: $font-size-content-h2;
+    font-size: $fs-content-h2;
+    line-height: $fs-content-h2;
     a {
       color: $text;
       &:hover {
@@ -558,7 +559,7 @@ pre {
     }
   }
   .entry-meta {
-    font-size: $font-size-list-article-meta;
+    font-size: $fs-list-article-meta;
     line-height: $line-height-article-title;
     color: $text-meta;
     margin-top: 15px;
@@ -575,7 +576,7 @@ pre {
     word-wrap: break-word;
   }
   .entry-header .entry-meta {
-    font-size: $font-size-list-article-meta;
+    font-size: $fs-list-article-meta;
     .author {
       color: $text;
       font-weight: $fw-body-bold;
@@ -617,7 +618,7 @@ pre {
     border-bottom: solid 1px $divider-lighter;
   }
   .entry-title {
-    font-size: $font-size-content-h2;
+    font-size: $fs-content-h2;
     line-height: $line-height-h2;
     a {
       color: $text;
@@ -670,7 +671,7 @@ pre {
     margin-bottom: 20px;
   }
   .entry-title {
-    font-size: $font-size-content-h2;
+    font-size: $fs-content-h2;
     line-height: $line-height-h2;
     a {
       color: $text;
@@ -705,7 +706,7 @@ article:hover {
   top: 8px;
   background: $bg-thumbnail;
   padding: 2px 8px;
-  font-size: $font-size-small;
+  font-size: $fs-small;
   text-transform: uppercase;
   color: $text-thumbnail;
   &:hover {
@@ -839,7 +840,7 @@ embed, iframe, object {
   padding-left: $page-padding;
   margin-top: 40px;
   .comments-title {
-    font-size: $font-size-content-h2;
+    font-size: $fs-content-h2;
     line-height: $line-height-h2;
   }
   .comment-list {
@@ -868,10 +869,10 @@ embed, iframe, object {
   }
   .comment-content {
     h1 {
-      font-size: $font-size-comment-h1;
+      font-size: $fs-comment-h1;
     }
     h2, h3, h4, h5, h6 {
-      font-size: $font-size-body;
+      font-size: $fs-body;
     }
     h1, h2, h3, h4, h5 {
       margin: 20px 0;
@@ -897,7 +898,7 @@ embed, iframe, object {
     }
     .comment-author {
       font-family: $ff-headers;
-      font-size: $font-size-body;
+      font-size: $fs-body;
       line-height: $line-height-body;
       a {
         text-decoration: none;
@@ -917,11 +918,11 @@ embed, iframe, object {
       margin-left: 4px;
       color: $text-meta;
       text-decoration: none;
-      font-size: $font-size-list-article-meta;
+      font-size: $fs-list-article-meta;
       a {
         color: $text-meta;
         text-decoration: none;
-        font-size: $font-size-list-article-meta;
+        font-size: $fs-list-article-meta;
       }
       &:hover, a:hover {
         color: $link-hover;
@@ -933,7 +934,7 @@ embed, iframe, object {
     padding-top: 40px;
   }
   #reply-title {
-    font-size: $font-size-content-h2;
+    font-size: $fs-content-h2;
     line-height: $line-height-h2;
   }
 }
@@ -973,7 +974,7 @@ embed, iframe, object {
     }
   }
   .widget-title {
-    font-size: $font-size-content-h3;
+    font-size: $fs-content-h3;
     margin-bottom: 20px;
     a {
       color: $text;
@@ -1263,12 +1264,12 @@ h3.sd-title {
     }
   }
   .single .site-content .entry-title {
-    font-size: $font-size-article-title-700;
+    font-size: $fs-article-title-700;
     line-height: $line-height-h1;
   }
   .site-content {
     .entry-content h1, .comment-content h1 {
-      font-size: $font-size-article-title-700;
+      font-size: $fs-article-title-700;
       line-height: $line-height-h1;
     }
   }

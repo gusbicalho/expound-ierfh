@@ -16,17 +16,17 @@ body, button, input, select, textarea {
 
 body {
   font-family: $ff-body;
-  font-size: $font-size-body;
+  font-size: $fs-body;
 }
 
 button {
   font-family: $ff-buttons;
-  font-size: $font-size-buttons;
+  font-size: $fs-buttons;
 }
 
 input, select, textarea {
   font-family: $ff-inputs;
-  font-size: $font-size-inputs;
+  font-size: $fs-inputs;
 }
 
 /* Headings */
@@ -35,12 +35,14 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-family: $ff-headers;
+  font-weight: $fw-headers;
 }
 
-h2, h3 {
-  font-weight: $fw-headers;
+h1 {
+  font-family: $ff-h1;
+  font-weight: $fw-h1;
 }
 
 hr {
@@ -101,8 +103,8 @@ address {
 
 pre {
   background: $smoke;
-  font-family: $font-family-mono;
-  font-size: $font-size-mono;
+  font-family: $ff-mono;
+  font-size: $fs-mono;
   line-height: $line-height-mono;
   margin-bottom: 1.6em;
   padding: 1.6em;
@@ -111,7 +113,7 @@ pre {
 }
 
 code, kbd, tt, var {
-  font: $font-size-mono $font-family-mono;
+  font: $fs-mono $ff-mono;
 }
 
 abbr, acronym {
@@ -125,7 +127,7 @@ mark, ins {
 }
 
 sup, sub {
-  font-size: $font-size-small;
+  font-size: $fs-small;
   height: 0;
   line-height: 0;
   position: relative;
@@ -141,11 +143,11 @@ sub {
 }
 
 small {
-  font-size: $font-size-small;
+  font-size: $fs-small;
 }
 
 big {
-  font-size: $font-size-big;
+  font-size: $fs-big;
 }
 
 figure {
@@ -271,7 +273,7 @@ textarea {
 }
 
 input, textarea {
-  font: $font-size-inputs $ff-inputs;
+  font: $fs-inputs $ff-inputs;
   line-height: $line-height-body;
 }
 
