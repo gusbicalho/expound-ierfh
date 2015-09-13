@@ -135,13 +135,11 @@ pre {
   }
   ul {
     ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      @include card(3);
       display: none;
-      float: left;
       position: absolute;
-      top: 1.5em;
-      left: 0;
-      z-index: 99999;
+      margin: 0;
+      z-index: 9996;
       ul {
         left: 100%;
         top: 0;
@@ -230,6 +228,7 @@ pre {
   font-weight: $fw-menu;
   letter-spacing: $letter-spacing-menu;
   text-transform: $text-transform-menu;
+  line-height: 1.5;
   ul {
     margin: 0 ($page-padding - 10px);
   }
@@ -270,7 +269,7 @@ pre {
         border-left: $nav-current-item-arrow-size solid transparent;
         border-right: $nav-current-item-arrow-size solid transparent;
         position: absolute;
-        bottom: -$nav-current-item-arrow-size;
+        bottom:  1px - $nav-current-item-arrow-size;
         left: 50%;
         margin-left: -$nav-current-item-arrow-size;
         z-index: 9995;
@@ -285,9 +284,6 @@ pre {
         content: '';
         border: none !important;
       }
-      margin: 0;
-      top: 40px;
-      z-index: 9990;
     }
     &.social {
       padding: 0;
@@ -697,7 +693,7 @@ article:hover {
 .entry-thumbnail {
   position: relative;
   img {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    @include card(1);
     max-width: 100%;
     height: auto;
   }
