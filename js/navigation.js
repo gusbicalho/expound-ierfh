@@ -3,61 +3,72 @@
  *
  * Handles toggling the navigation menu for small screens.
  */
+var $ = jQuery;
 ( function() {
-	var container = document.getElementById( 'site-navigation' ),
-	    button    = container.getElementsByTagName( 'h1' )[0],
-	    menu      = container.getElementsByTagName( 'ul' )[0];
+  var slideDuration = 150;
+	var container = $('#site-navigation'),
+	    button    = container.find( 'h1' ).first(),
+	    menu      = container.find( 'ul' ).first();
 
-	if ( undefined == button || undefined == menu )
+	if ( !button || !button.length || !menu || !menu.length)
 		return false;
 
-	button.onclick = function() {
-		if ( -1 == menu.className.indexOf( 'nav-menu' ) )
-			menu.className = 'nav-menu';
+	button.click(function() {
+    console.log('lol');
+		if (!menu.hasClass( 'nav-menu' ))
+			menu.addClass('nav-menu');
 
-		if ( -1 != button.className.indexOf( 'toggled-on' ) ) {
-			button.className = button.className.replace( ' toggled-on', '' );
-			menu.className = menu.className.replace( ' toggled-on', '' );
-			container.className = container.className.replace( 'main-small-navigation', 'navigation-main' );
-		} else {
-			button.className += ' toggled-on';
-			menu.className += ' toggled-on';
-			container.className = container.className.replace( 'navigation-main', 'main-small-navigation' );
+		if (button.hasClass('toggled-on')) { // Hide emenu
+      menu.slideUp(slideDuration, 'swing', function() {
+        button.removeClass('toggled-on');
+        container.removeClass('main-small-navigation');
+        container.addClass('navigation-main');
+        menu.removeClass('toggled-on');
+        menu.css('display', '');
+      });
+		} else { // Show menu
+      button.addClass('toggled-on');
+      container.removeClass('navigation-main');
+      container.addClass('main-small-navigation');
+      menu.slideDown(slideDuration, 'swing', function() {
+        menu.addClass('toggled-on');
+        menu.css('display', '');
+      });
 		}
-	};
+	});
 
 	// Hide menu toggle button if menu is empty.
-	if ( ! menu.childNodes.length )
+	if (!menu.children().length)
 		button.style.display = 'none';
 
-	// Fix child menus for touch devices.
-	function fixMenuTouchTaps( container ) {
-		var touchStartFn,
-		    parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+	/**
+   * Fix child menus for touch devices.
+   * @param {JQuery} container
+   */
+	function fixMenuTouchTaps(container) {
+		var touchStartFn;
+		var parentLink = container.find('.menu-item-has-children > a, .page_item_has_children > a');
 
-		if ( 'ontouchstart' in window ) {
-			touchStartFn = function( e ) {
+		if ('ontouchstart' in window) {
+			touchStartFn = function(e) {
 				var menuItem = this.parentNode;
 
-				if ( ! menuItem.classList.contains( 'focus' ) ) {
+				if (!menuItem.classList.contains('focus')) {
 					e.preventDefault();
 					for( var i = 0; i < menuItem.parentNode.children.length; ++i ) {
 						if ( menuItem === menuItem.parentNode.children[i] ) {
 							continue;
 						}
-						menuItem.parentNode.children[i].classList.remove( 'focus' );
+						menuItem.parentNode.children[i].classList.remove('focus');
 					}
-					menuItem.classList.add( 'focus' );
+					menuItem.classList.add('focus');
 				} else {
-					menuItem.classList.remove( 'focus' );
+					menuItem.classList.remove('focus');
 				}
 			};
 
-			for ( var i = 0; i < parentLink.length; ++i ) {
-				parentLink[i].addEventListener( 'touchstart', touchStartFn, false )
-			}
+			parentLink.children().on('touchstart', touchStartFn, false);
 		}
 	}
-
-	fixMenuTouchTaps( container );
+	fixMenuTouchTaps(container);
 } )();
